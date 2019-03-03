@@ -8,15 +8,9 @@
 ```
 <font size=4>调用函数的时候，如果传入的参数数量不对或者参数的数据类型不对，会报 `TypeError`的错误，并且会明确告诉你传入参数错误：</font>
 ```python
->>>abs(10,1)
-TypeError                       Traceback (most recent call last)
-<ipython-input-2-ca182893c75b> in <module>
-----> 1  abs(10,1)
+---->abs(10,1)
 TypeError: abs() takes exactly one argument (2 given)
->>>abs('a')
-TypeError                       Traceback (most recent call last)
-<ipython-input-5-f2001f88707b> in <module>
-----> 1  abs('a')
+---->abs('a')
 TypeError: bad operand type for abs(): 'str'
 ```
 Python当中，函数名其实就是指向一个函数对象的引用，完全可以把函数名赋给一个  
