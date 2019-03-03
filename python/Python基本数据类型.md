@@ -1,8 +1,7 @@
-﻿# **ML学习之Python**</br>
+﻿
+# <font color="#CD00CD">Python基本数据类型</font></br>
 
-## <font color="#CD00CD">一、Python基本数据类型</font></br>
-
-### <font color="#CD4F39">1.1Python当中的字符串</font>
+## <font color="#CD4F39">1Python当中的字符串</font>
 
 Python字符串要用单引号```'```或者双引号```"```括起来表示，使用反斜杠```\```来进行特殊字符的转义,由于Pthon字符串是以Unicode编码的，因此Python的字符串可以同时支持多种语言。单个字符的编码，Python提供了ord()函数获取字符的整数(ASCII码)表示，chr()函数把编码转换为对应的字符：
 ```python
@@ -45,8 +44,10 @@ Hi, Michael, you have $1000000.
 %x 十六进制整数</br>
 </font>
 
-### <font color="#CD4F39">1.2Python的list:</font>
+## <font size=6 color="#CD4F39">2Python的list:</font>
+**list在Python当中很重要的一项内容，使用范围极广，而且针对列表的各种操作也很多，此处只是介绍了一些用的频率比较高并且比较重要的操作，更为复杂的操作可以在做项目时进行学习。**
 
+### 2.1list基本概念与用法
 Python内置的一种数据类型是列表，其也是Python当中使用最多的一种数据类型。list是一种有序的集合，可以随时添加和删除其中的元素,**访问元素是从索引0开始，也可以只用使用负数做索引(由-1开始，访问最后一个元素)，超出索引范围会报一个IndexError错误**。
 ```python
 >>>data = [1,2,3,'hello']
@@ -71,8 +72,36 @@ list 是一个可变的有序表，所以，可以往list中追加元素到末�
 >>> data
 [1,2,3,'hello','Adam']
 ```
+### <font size=6>2.2list生成式</font>
+列表生成式即`List Comprehensions`，是Python内置的非常简单却强大的  
+可以用来创建 list 的生成式。
+通常我们要生成具有某种规律又比较大的列表，可以采用for循环的方式:
+```python
+>>> L = []  
+>>> for x in range(1, 11):  
+		L.append(x * x)   
+>>> L  
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+但是使用循环的方式一般太过繁琐，而列表生成式则可以用一行语句代替循环生成上面的列表：
+```python
+>>> [x * x for x in range(1, 11)]  
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+写列表生成式时，把要生成的元素x * x放到前面，后面跟for循环，就可以把 list创建出来,for循环后面还可以加上if判断，这样我们就可以筛选出仅偶数的平方：
+```python
+>>> [x * x for x in range(1, 11) if x % 2 == 0]  
+[4, 16, 36, 64, 100]
+```
+还可以使用两层循环，可以生成全排列：
+```python
+>>> [m + n for m in 'ABC' for n in 'XYZ']  
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+```
+**列表生成式是一种比较常用并且比较重要的列表产生方法，要好好掌握！**
 
-### <font color="#CD4F39">1.3Python的tuple(元组):</font>
+**有关列表的生成方式还有`生成器`的方式，具体内容可以看相关的生成器与迭代器的内容**。
+## <font color="#CD4F39">3Python的tuple(元组):</font>
 
 tuple也是Python当中的一种有序列表，与list非常类似，但是tuple一旦创立便不可以更改，并且没有append()， insert()这样的方法，元素的获取方法与list一样，但是当中元素不可以被赋值。当你定义一个tuple时，其中的元素就必须要确定下来:
 ```python
@@ -99,7 +128,7 @@ tuple也是Python当中的一种有序列表，与list非常类似，但是tuple
 ```
 ><font color="#9B30FF">tuple的不变应该理解为tuple元素指向的不变，虽然list当中元素变了，但是仍为指向的这一个list。</font>
 
-### <font color="#CD4F39">1.4Python的dict(字典):</font>
+## <font color="#CD4F39">4Python的dict(字典):</font>
 
 Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值(key-value)存储，具有极快的查找速度。
 ```python
@@ -136,7 +165,7 @@ False
 **dict可以用在需要高速查找的很多地方，在Python代码中几乎无处不在，正确使用dict非常重要，需要牢记的第一条就是dict的key必须是不可变对象。这是因为dict根据key来计算value的存储位置，如果每次计算相同的key得出的结果不同，那dict内部就完全混乱了。这个通过key计算位置的算法称为哈希算法（ Hash）。要保证hash的正确性，作为key的对象就不能变。在Python中，字符串、整数等都是不可变的，因此，可以放心地作为key。而list是可变
 的，就不能作为key**
 
-### <font color="#CD4F39">1.5Python的set(集合):</font>
+## <font color="#CD4F39">5Python的set(集合):</font>
 
 set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以在set中，没有重复的key。</br>
 要创建一个 set，需要提供一个 list 作为输入集合：
