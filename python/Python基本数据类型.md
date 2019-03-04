@@ -1,6 +1,21 @@
 ﻿
 # <font color="#CD00CD">Python基本数据类型</font></br>
 
+<!-- TOC -->
+
+- [<font color="#CD00CD">Python基本数据类型</font></br>](#font-colorcd00cdpython基本数据类型fontbr)
+    - [<font color="#CD4F39">1Python当中的字符串</font>](#font-colorcd4f391python当中的字符串font)
+    - [<font size=6 color="#CD4F39">2Python的list:</font>](#font-size6-colorcd4f392python的listfont)
+        - [2.1list基本概念与用法](#21list基本概念与用法)
+        - [<font size=6>2.2list生成式</font>](#font-size622list生成式font)
+    - [<font color="#CD4F39">3Python的tuple(元组):</font>](#font-colorcd4f393python的tuple元组font)
+    - [<font color="#CD4F39">4Python的dict(字典):</font>](#font-colorcd4f394python的dict字典font)
+    - [<font color="#CD4F39">5Python的set(集合):</font>](#font-colorcd4f395python的set集合font)
+        - [<font color="#CD2626">**再议可变与不可变对象:**</font>](#font-colorcd2626再议可变与不可变对象font)
+
+<!-- /TOC -->
+
+
 ## <font color="#CD4F39">1Python当中的字符串</font>
 
 Python字符串要用单引号```'```或者双引号```"```括起来表示，使用反斜杠```\```来进行特殊字符的转义,由于Pthon字符串是以Unicode编码的，因此Python的字符串可以同时支持多种语言。单个字符的编码，Python提供了ord()函数获取字符的整数(ASCII码)表示，chr()函数把编码转换为对应的字符：
