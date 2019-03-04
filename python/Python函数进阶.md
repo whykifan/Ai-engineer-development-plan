@@ -1,15 +1,18 @@
 ﻿# Python函数进阶
 
 <!-- TOC -->
-- [1高阶函数](##1高阶函数)
-- [2map、reduce与filter(掌握)](##2map、reduce与filter(掌握))
-    - [2.1map()](###2.1map())
-    - [2.2reduce()]( ###2.2reduce())
-    - [2.3filter()](###2.3filter())
- - [3sorted](##3sorted)
-- [4匿名函数(掌握)]( ##4匿名函数(掌握))
-- [5装饰器(掌握)](##5装饰器(掌握))
+- [Python函数进阶](#python函数进阶)
+- [1高阶函数](#1高阶函数)
+- [2map、reduce与filter(掌握)](#2mapreduce与filter掌握)
+- - [2.1map()](#21map)
+- - [2.2reduce()](#22reduce)
+-  - [2.3filter()](#23filter)
+- [3sorted](#3sorted)
+- [4匿名函数(掌握)](#4匿名函数掌握)
+- [5装饰器(掌握)](#5装饰器掌握)
 <!-- /TOC -->
+
+
 ## 1高阶函数
 对于Python内置的求绝对值的函数，调用函数可以使用以下代码：
 ```python
