@@ -30,8 +30,8 @@ NumPy通常与 **SciPy**（Scientific Python）和 **Matplotlib**（绘图库）
 
 如果想要将一个2-D数组 a 的每个元素与长度相同的另外一个数组 b 中相应位置的元素相乘，使用 Python 原生的数组实现如下：
 ```python
-for (i =  0; i < rows; i++):  
-	for (j =  0; j < columns; j++):  
+for i in range(rows):  
+	for j in range(columns):  
 		c[i][j]  = a[i][j]*b[i][j]; 
 ```
 使用 Numpy 实现的话，则可以直接使用矢量化功能:
