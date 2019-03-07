@@ -26,9 +26,9 @@ ndarray 内部由以下内容组成：
     
 -   **一个跨度元组（stride），其中的整数指的是为了前进到当前维度下一个元素需要"跨过"的字节数**。
     
-ndarray 的内部结构:<\br>
+ndarray 的内部结构:
 
-![ndarray 的内部结构](http://www.runoob.com/wp-content/uploads/2018/10/ndarray.png)<\br>
+![ndarray 的内部结构](http://www.runoob.com/wp-content/uploads/2018/10/ndarray.png)
 
 跨度可以是负数，这样会使数组在内存中后向移动，切片中 obj[::-1] 或 obj[:,::-1] 就是如此。
 
