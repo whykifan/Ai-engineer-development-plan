@@ -1,4 +1,15 @@
-﻿# Numpy ndarray对象
+﻿
+<!-- TOC -->
+
+- [Numpy ndarray对象](#numpy-ndarray对象)
+- [创建ndarray](#创建ndarray)
+    - [1、基本的方法](#1基本的方法)
+    - [2、创建数值范围的数组](#2创建数值范围的数组)
+    - [3、通过random方式创建](#3通过random方式创建)
+
+<!-- /TOC -->
+
+# Numpy ndarray对象
 NumPy 最重要的一个特点是其 N 维数组对象 ndarray，它是一系列同类型数据的集合，以 0 下标为开始进行集合中元素的索引。
 
 ndarray 对象是用于存放同类型元素的多维数组。
